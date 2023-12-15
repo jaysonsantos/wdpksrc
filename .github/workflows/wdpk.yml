@@ -99,7 +99,7 @@ jobs:
           echo "$(ls -l ..)"
 
       - name: Upload artifacts
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: ${{ steps.make_apkg.outputs.pkg }}_${{ steps.make_apkg.outputs.version }}_OS5
           path: wdpk/*_*_*.bin
